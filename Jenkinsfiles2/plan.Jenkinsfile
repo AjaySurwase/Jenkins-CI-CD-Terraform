@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'feature-branch', url: 'https://github.com/your/repo.git'
+                git branch: 'main', url: 'https://github.com/AjaySurwase/Jenkins-CI-CD-Terraform.git'
             }
         }
 
