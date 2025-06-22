@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    tools {
+    Terraform 'Terraform-1.7.5' // Use the name you gave in Global Tool Configuration
+    }
+
     environment {
         AWS_ACCESS_KEY_ID     = credentials('Access-key')
         AWS_SECRET_ACCESS_KEY = credentials('Secret-key')
