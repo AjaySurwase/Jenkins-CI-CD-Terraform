@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-    Terraform 'Terraform-1.7.5' // Use the name you gave in Global Tool Configuration
+    Terraform 'Terraform' // Use the name you gave in Global Tool Configuration
     }
 
     environment {
