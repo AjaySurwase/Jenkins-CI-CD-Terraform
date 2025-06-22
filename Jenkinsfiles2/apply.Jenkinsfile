@@ -1,9 +1,6 @@
 pipeline {
     agent any
 
-    tools {
-    Terraform 'Terraform' // Use the name you gave in Global Tool Configuration
-    }
     parameters {
         booleanParam(name: 'autoApprove', defaultValue: false, description: 'Apply automatically without prompt?')
     }
